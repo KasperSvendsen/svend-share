@@ -35,7 +35,39 @@ Before setting up the project, ensure you have the following:
    git clone https://github.com/KasperSvendsen/svend-share.git
    ```
 
-2. Install dependencies:
+2. Navigate to the project directory:
    ```bash
-    pip install -r requirements.txt
-    ```
+   cd svend-share
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up the PostgreSQL database:
+   - Detailed instructions for initializing and configuring the database.
+
+5. (Optional) Docker setup:
+   - Instructions for using Docker/Docker Compose.
+
+### Running the Application
+
+1. Start the FastAPI server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+2. The server will be available at `http://localhost:8000`.
+
+## Contribution
+
+Contributions to Svend-Share are welcome. Please read the contribution guidelines for more information on how to report issues, submit changes, and how to get involved.
+
+## License
+
+[Specify the license or indicate 'License: MIT', if applicable]
+
+---
+
+For more information or assistance, refer to the project documentation or contact the maintainers.
