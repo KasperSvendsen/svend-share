@@ -33,3 +33,9 @@ Before setting up the project, ensure you have the following:
 1. Clone the repository:
    ```bash
    git clone https://github.com/KasperSvendsen/svend-share.git
+   ```
+
+2. Install dependencies:
+   ```bash
+    pip install -r requirements.txt
+    ```
