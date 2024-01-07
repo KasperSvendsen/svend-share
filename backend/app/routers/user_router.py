@@ -4,7 +4,7 @@ from .. import schemas, models, dependencies
 
 router = APIRouter()
 
-@router.post("/users/", response_model=schemas.UserCreate)
+@router.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(dependencies.get_db)):
  # Check if a user with the provided phone number already exists
     existing_user = db.query(models.User).filter(models.User.phone_number == user.phone_number).first()
@@ -26,3 +26,9 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(dependencies.get
 
     # Return the created user
     return new_user
+
+@router.get("/users/", response_model=list[schemas.User])
+def list_users(db: Session = Depends(dependencies.get_db)):
+    # Retrieve and return a list of all users in the database
+    users = db.query(models.User).all()
+    return users

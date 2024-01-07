@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Svend-Share is a web application designed to facilitate the management and splitting of expenses among individuals or groups. The project aims to provide a clear and accessible platform for users to track shared expenses, calculate balances, and simplify financial interactions in various scenarios such as group trips, shared living arrangements, or joint projects.
+Svend-Share is a web application designed to facilitate the management and splitting of expenses among groups. The project aims to provide a clear and accessible platform for users to track shared expenses, calculate balances, and simplify financial interactions in various scenarios such as group trips, shared living arrangements, or joint projects.
 
 ## Core Functionalities
 
